@@ -3,7 +3,7 @@ import 'package:qr_scanner_app/core/routes/route_names.dart';
 import 'package:qr_scanner_app/features/home/bindings/home_binding.dart';
 import 'package:qr_scanner_app/features/home/views/screens/home_screen.dart';
 import 'package:qr_scanner_app/features/html_display/bindings/html_display_binding.dart';
-import 'package:qr_scanner_app/features/html_display/views/html_display_screen.dart';
+import 'package:qr_scanner_app/features/html_display/views/screens/html_display_screen.dart';
 import 'package:qr_scanner_app/features/qr_scanner/bindings/qr_scanner_binding.dart';
 import 'package:qr_scanner_app/features/qr_scanner/views/screens/qr_scanner_screen.dart';
 

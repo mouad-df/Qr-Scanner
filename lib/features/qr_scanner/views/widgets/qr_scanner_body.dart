@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
+import 'package:qr_scanner_app/core/buttons/custom_button.dart';
 import 'package:qr_scanner_app/core/routes/route_names.dart';
 import 'package:qr_scanner_app/features/qr_scanner/controllers/qr_scanner_controller.dart';
 
@@ -42,32 +43,17 @@ class QrScannerScreenBody extends GetView<QrScannerController> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                ElevatedButton.icon(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.red,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 15),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                  ),
-                  onPressed: () {
-                    Get.back();
-                  },
-                  icon: const Icon(
-                    Icons.exit_to_app,
-                    color: Colors.white,
-                    size: 24,
-                  ),
-                  label: const Text(
-                    'Quitter',
-                    style: TextStyle(
+                CustomButton(
+                    onPress: () {
+                      Get.back();
+                    },
+                    labelText: 'Quitter',
+                    icon: const Icon(
+                      Icons.exit_to_app,
                       color: Colors.white,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+                      size: 24,
                     ),
-                  ),
-                ),
+                    backgroundColor: Colors.red),
               ],
             ),
           ),
